@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.download.WizCLI</string>
+	<key>Input</key>
+	<dict>
+		<key>BYPASS_STOP_PROCESSING_IF_DOWNLOAD_UNCHANGED</key>
+		<string>False</string>
+		<key>DOWNLOAD_MISSING_FILE</key>
+		<string></string>
+		<key>NAME</key>
+		<string>Wiz CLI</string>
+		<key>SOFTWARE_TITLE</key>
+		<string>WizCLI</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dharma.download.WizCLI</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>com.github.smithjw-actions.processors/URLDownloaderPython</key>
+			<dict>
+				<key>git_hash</key>
+				<string>854c2aedd144a4a660fac6d6cb88b92145afaa43</string>
+				<key>path</key>
+				<string>/usr/local/autopkgci/repos/com.github.smithjw.smithjw-actions-recipes/SharedProcessors/URLDownloaderPython.py</string>
+				<key>sha256_hash</key>
+				<string>6bb781a6cf45794b78ae81035553de4b89be03311f1a7cde2604f419249f8ed2</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dharma.download.WizCLI</key>
+			<dict>
+				<key>path</key>
+				<string>~/Documents/dev/searXNG/WizCLI.download.recipe.yaml</string>
+				<key>sha256_hash</key>
+				<string>95116998735d97d4a214f25501f2cce6c923ee2bb1f5eb14a855761ad7a7dd0c</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.pkg.WizCLI</string>
+	<key>Input</key>
+	<dict>
+		<key>BYPASS_STOP_PROCESSING_IF_DOWNLOAD_UNCHANGED</key>
+		<string>False</string>
+		<key>DOWNLOAD_MISSING_FILE</key>
+		<string></string>
+		<key>NAME</key>
+		<string>Wiz CLI</string>
+		<key>SOFTWARE_TITLE</key>
+		<string>WizCLI</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.dharma.pkg.WizCLI</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>WizVersionExtractor</key>
+			<dict>
+				<key>path</key>
+				<string>~/Documents/dev/searXNG/WizVersionExtractor.py</string>
+				<key>sha256_hash</key>
+				<string>64af7bc3f2c7a8293ff00cb2ade646619739ce40ba4d3b83b4fc6cde0f9ad553</string>
+			</dict>
+			<key>com.github.smithjw-actions.processors/URLDownloaderPython</key>
+			<dict>
+				<key>git_hash</key>
+				<string>854c2aedd144a4a660fac6d6cb88b92145afaa43</string>
+				<key>path</key>
+				<string>/usr/local/autopkgci/repos/com.github.smithjw.smithjw-actions-recipes/SharedProcessors/URLDownloaderPython.py</string>
+				<key>sha256_hash</key>
+				<string>6bb781a6cf45794b78ae81035553de4b89be03311f1a7cde2604f419249f8ed2</string>
+			</dict>
+			<key>com.github.smithjw.processors/FriendlyPathDeleter</key>
+			<dict>
+				<key>git_hash</key>
+				<string>c26a799a9933074405c283ed2041d94cebab027f</string>
+				<key>path</key>
+				<string>/usr/local/autopkgci/repos/com.github.autopkg.smithjw-recipes/SharedProcessors/FriendlyPathDeleter.py</string>
+				<key>sha256_hash</key>
+				<string>0b6bd25a9286ce875da80ca2a8e61bdb59b79214d5d1e5f465eab14b5d607e6c</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.dharma.download.WizCLI</key>
+			<dict>
+				<key>path</key>
+				<string>~/Documents/dev/searXNG/WizCLI.download.recipe.yaml</string>
+				<key>sha256_hash</key>
+				<string>95116998735d97d4a214f25501f2cce6c923ee2bb1f5eb14a855761ad7a7dd0c</string>
+			</dict>
+			<key>com.github.dharma.pkg.WizCLI</key>
+			<dict>
+				<key>path</key>
+				<string>~/Documents/dev/searXNG/WizCLI.pkg.recipe.yaml</string>
+				<key>sha256_hash</key>
+				<string>e4665969facf74113c4613bc02a6efc2bf10d61b1748846951f85b9688f1b2b5</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
